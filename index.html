@@ -91,10 +91,10 @@
             <label>Menge / Größe<input class="field" id="productSize" maxlength="30" placeholder="z. B. 0,5 l" required></label>
             <label>Preis in €<input class="field" id="productPrice" inputmode="decimal" placeholder="0,00" required></label>
             <label>Gruppe<select class="field" id="productGroup" required></select></label>
-            <label class="image-field">
+            <div class="image-field">
               <span class="image-preview empty" id="productImagePreview">Kein Bild</span>
-              <span class="image-actions"><b>Produktbild</b><span>Foto auswählen oder aufnehmen. Ohne Produktbild wird das Gruppenbild verwendet.</span><label class="primary image-mini">Bild auswählen<input class="image-input" id="productImage" type="file" accept="image/*"></label><button class="secondary" id="removeProductImage" type="button">Bild entfernen</button></span>
-            </label>
+              <span class="image-actions"><b>Produktbild</b><span>Foto auswählen oder aufnehmen. Ohne Produktbild wird das Gruppenbild verwendet.</span><label class="primary image-mini" for="productImage">Bild auswählen<input class="image-input" id="productImage" type="file" accept="image/*"></label><button class="secondary" id="removeProductImage" type="button">Bild entfernen</button></span>
+            </div>
           </div>
           <div class="editor-actions">
             <button class="danger-link" id="resetCatalog" type="button">Standardliste wiederherstellen</button>
