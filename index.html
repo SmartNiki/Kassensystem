@@ -162,7 +162,12 @@
       {id:"beer-alcohol-free",label:"Bier alkoholfrei",src:PRODUCT_IMAGE_DATA["beer-alcohol-free"]||"assets/products/beer-alcohol-free.webp",keywords:["alkfrei","alkoholfrei","bier 0","zero bier"],groups:["bier","alkoholfrei"]},
       {id:"herbal-lemonade",label:"Kräuterlimonade",src:PRODUCT_IMAGE_DATA["herbal-lemonade"]||"assets/products/herbal-lemonade.webp",keywords:["almdudler","kräuterlimonade","kraeuterlimonade","kräuter","krauter"],groups:["alkoholfrei"]},
       {id:"orange-lemonade",label:"Orangenlimonade",src:PRODUCT_IMAGE_DATA["orange-lemonade"]||"assets/products/orange-lemonade.webp",keywords:["frucade","orangenlimonade","orange limo","limo"],groups:["alkoholfrei"]},
-      {id:"soda-water",label:"Sodawasser",src:PRODUCT_IMAGE_DATA["soda-water"]||"assets/products/soda-water.webp",keywords:["soda","sodawasser","wasser","mineralwasser"],groups:["alkoholfrei"]}
+      {id:"soda-water",label:"Sodawasser",src:PRODUCT_IMAGE_DATA["soda-water"]||"assets/products/soda-water.webp",keywords:["soda","sodawasser","wasser","mineralwasser","mineral prickelnd","prickelnd","mineral"],groups:["alkoholfrei"]},
+      {id:"white-wine",label:"Weißwein",src:PRODUCT_IMAGE_DATA["white-wine"]||"assets/products/white-wine.webp",keywords:["aus den langen gärten","aus den langen garten","gelber muskateller","muskateller","weißwein","weisswein"],groups:["wein frizzante","wein"]},
+      {id:"rose-wine",label:"Roséwein",src:PRODUCT_IMAGE_DATA["rose-wine"]||"assets/products/rose-wine.webp",keywords:["rosé","rose","roséwein","rosewein"],groups:["wein frizzante","wein"]},
+      {id:"frizzante",label:"Frizzante",src:PRODUCT_IMAGE_DATA.frizzante||"assets/products/frizzante.webp",keywords:["frizzante","schaumwein","prosecco","sekt"],groups:["wein frizzante","wein"]},
+      {id:"spritzer-package",label:"Spritzer-Paket",src:PRODUCT_IMAGE_DATA["spritzer-package"]||"assets/products/spritzer-package.webp",keywords:["spritzer paket","spritzer package","paket"],groups:["wein frizzante","spritzer"]},
+      {id:"herbal-shot",label:"Kräuterlikör",src:PRODUCT_IMAGE_DATA["herbal-shot"]||"assets/products/herbal-shot.webp",keywords:["jägermeister","jaegermeister","kräuterlikör","kraeuterlikor","shot","schnaps"],groups:["alkohol"]}
     ].map(function(item){item.ref="library:"+item.id;return item});
     function normalizeImageKey(value){return String(value||"").toLocaleLowerCase("de-AT").normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^a-z0-9]+/g," ").trim()}
     function imageSuggestions(name,group){
